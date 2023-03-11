@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"acm","Source":"registry.terraform.io/terraform-aws-modules/acm/aws","Version":"3.5.0","Dir":".terraform/modules/acm"},{"Key":"api_gateway","Source":"../..","Dir":"../.."},{"Key":"step_function","Source":"registry.terraform.io/terraform-aws-modules/step-functions/aws","Version":"2.7.3","Dir":".terraform/modules/step_function"}]}
