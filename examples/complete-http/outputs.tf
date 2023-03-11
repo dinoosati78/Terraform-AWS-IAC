@@ -125,7 +125,7 @@ output "apigatewayv2_hosted_zone_id" {
   value       = module.api_gateway.apigatewayv2_domain_name_hosted_zone_id
 }
 
-# Route53 record
+/*# Route53 record
 output "api_fqdn" {
   description = "List of Route53 records"
   value       = aws_route53_record.api.fqdn
@@ -135,7 +135,7 @@ output "api_endpoint" {
   description = "FQDN of an API endpoint"
   value       = "https://${aws_route53_record.api.fqdn}"
 }
-
+*/
 output "apigatewayv2_authorizer_id" {
   description = "The map of API Gateway Authorizer identifiers"
   value       = module.api_gateway.apigatewayv2_authorizer_id
