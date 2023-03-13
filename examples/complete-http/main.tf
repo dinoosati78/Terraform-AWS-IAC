@@ -39,7 +39,7 @@ module "api_gateway" {
   }
 
   domain_name                 = local.domain_name
-  //domain_name_certificate_arn = module.acm.acm_certificate_arn
+  domain_name_certificate_arn = module.acm.acm_certificate_arn
 
   default_stage_access_log_destination_arn = aws_cloudwatch_log_group.logs.arn
   default_stage_access_log_format          = "$context.identity.sourceIp - - [$context.requestTime] \"$context.httpMethod $context.routeKey $context.protocol\" $context.status $context.responseLength $context.requestId $context.integrationErrorMessage"
@@ -152,7 +152,7 @@ module "api_gateway" {
 # ACM
 ######
 
-/*data "aws_route53_zone" "this" {
+data "aws_route53_zone" "this" {
   name = local.domain_name
 }
 
@@ -179,7 +179,7 @@ resource "aws_route53_record" "api" {
     zone_id                = module.api_gateway.apigatewayv2_domain_name_configuration[0].hosted_zone_id
     evaluate_target_health = false
   }
-}*/
+}
 
 #############################
 # AWS API Gateway Authorizer
