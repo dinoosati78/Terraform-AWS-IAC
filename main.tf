@@ -12,7 +12,7 @@ resource "aws_apigatewayv2_api" "this" {
   api_key_selection_expression = var.api_key_selection_expression
   disable_execute_api_endpoint = var.disable_execute_api_endpoint
 
-  /* Start of quick create */
+  /* Start of quick create */ 
   route_key       = var.route_key
   credentials_arn = var.credentials_arn
   target          = var.target
