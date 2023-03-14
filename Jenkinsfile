@@ -40,7 +40,7 @@
 
     steps {
 
-    echo "Terraform plan QA"
+    echo "Terraform plan PROD"
    
     
    // sh ('cd  C:/Users/Besty/terraform-usecases/Terraform-AWS-IAC/lambda')
